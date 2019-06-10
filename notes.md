@@ -33,3 +33,10 @@ top = (100 - height) / 2
 * We guess the width and height of the nose too, you may like koalas with larger noses! So, set as you like. Then, we have to give a higher `z-index` to the nose so it appears on top of the eyes. Use `border-radius: 50%` to get the rounded corners.
 * Add inner-nose element and create a slight shade of lighter brown to make the nostrils. We also use `border-bottom` to get the curves. Use the more modern approach mentioned before to get the element `inner-nose--right` to the right using `transform: translateX(20px);`.
 * For the `mouth` element, after setting width and height with `background color`, I realised it looked to block-y. So, used `border-bottom: 12px solid var(--grey-dark);` to create a straight line and add a `border-radius: 0 0 100% 100%;` skewing the corners to make a half moon shape 🌙.
+* For the `hair-right` & `hair-left` elements we still use a square but `border-radius` wouldn't work as we want a triangle. We use `clip-path`'s `polygon` tool to cut out a triangle. Luckily, we find the shape we want on [clippy](https://bennettfeely.com/clippy/) and paste the polygon dimensions to make the clip-path magic happen.
+
+* It's not as scary. We simply tell the browser that it has an X and Y axis. The first `50% 0` declares a point @ 50% of the containers x axis and 0 on the y axis. Then 0% x-axis and 100% y axis, and 100% x-axis and 100% y-axis makes the three points of a triangle, which the polygon cuts away 🙂. => 🔺
+
+```
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+```
