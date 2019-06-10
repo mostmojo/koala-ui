@@ -31,7 +31,8 @@ body {
 	height: 67%;
 	background: var(--grey);
 	border-radius: 50%;
-  }
+	animation: drop 1.5s ease;
+}
 
 .head-copy {
 	position: absolute;
@@ -72,6 +73,7 @@ body {
 	top: 10%;
 	left: 10%;
 	background: var(--grey-dark);
+	animation: drop 1.5s ease;
 }
 
 .eye-left {
@@ -104,6 +106,7 @@ body {
 	left: 36%;
 	border-radius: 50%;
 	background: var(--black);
+	animation: drop 1.5s ease;
 }
 
 .nose {
@@ -139,7 +142,9 @@ body {
     border-bottom: 12px solid var(--grey-dark);
     top: 70%;
     left: 38%;
-    z-index: 3;
+	z-index: 3;
+	animation: drop 1.5s ease;
+
 }
 
 .hair-left {
@@ -163,3 +168,20 @@ body {
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
+
+  @keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-13.5px);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: translateY(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
