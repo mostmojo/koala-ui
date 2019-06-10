@@ -1,3 +1,4 @@
+/* --- Color variables --- */
 :root {
 	--blue: #81c2c5;
 	--grey: #c1d5e4;
@@ -20,7 +21,6 @@ body {
 	width: 600px;
 	height: 420px;
 	background: none;
-	/* border: 2px solid red; --- to see what it looks like --- */
 }
 
 .head {
@@ -63,7 +63,7 @@ body {
 	background: var(--grey);
 	border-radius: 50%;
 	z-index: 1;
-  }
+}
 
 .inner-ear {
 	position: absolute;
@@ -144,7 +144,6 @@ body {
     left: 38%;
 	z-index: 3;
 	animation: drop 1.5s ease;
-
 }
 
 .hair-left {
@@ -156,9 +155,9 @@ body {
 	background:  var(--grey);
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
+}
 
-  .hair-right {
+.hair-right {
 	position: absolute;
 	top: -4%;
 	left: 48%;
@@ -167,9 +166,10 @@ body {
 	background:  var(--grey);
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
+}
 
-  @keyframes drop {
+/* Keyframes for animation */
+@keyframes drop {
 	0% {
 		opacity: 0;
 		transform: translateY(-13.5px) scale(1.25);
@@ -196,3 +196,4 @@ body {
 	  height: 280px;
 	  background: none;
 	}
+}
