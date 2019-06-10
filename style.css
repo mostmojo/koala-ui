@@ -13,6 +13,19 @@ body {
 	background: var(--blue);
 }
 
+p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 1.125rem;
+	background: linear-gradient(to right, var(--white), var(--grey-dark));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: text 1.625s ease;
+	animation-delay: 1.5s;
+	padding-left: 4rem;
+	opacity: 0.0;
+}
+
 /* --- Invisible box container --- */
 .box {
 	position: relative;
@@ -180,6 +193,23 @@ body {
 	50% {
 		opacity: 0.5;
 		transform: translateY(-10px) scale(1.1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+
+@keyframes text {
+	0% {
+		opacity: 0;
+		transform: translateY(-13.5px) scale(2.25);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: translateY(10px) scale(0.5);
 	}
 
 	100% {
