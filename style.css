@@ -2,7 +2,7 @@
 	--blue: #81c2c5;
 	--grey: #c1d5e4;
 	--grey-dark: #819CAF;
-	--black: #000000;
+	--black: #27354A;
 	--white: #ffffff;
 }
 
@@ -70,4 +70,36 @@ body {
 	top: 10%;
 	left: 10%;
 	background: var(--grey-dark);
+  }
+
+  .eye-left {
+	position: absolute;
+	background: var(--white);
+	width: 30%;
+	height: 33%;
+	top: 25%;
+	left: 21%;
+	border-radius: 50%;
+	z-index: 3;
+  }
+
+  .eye-right {
+	position: absolute;
+	background: var(--white);
+	width: 30%;
+	height: 33%;
+	top: 25%;
+	right: 21%;
+	border-radius: 50%;
+	z-index: 3;
+  }
+
+  .pupil {
+	position: absolute;
+	width: 28%;
+	height: 30%;
+	top: 35%;
+	left: 36%;
+	border-radius: 50%;
+	background: var(--black);
   }
