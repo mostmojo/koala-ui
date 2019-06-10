@@ -5,6 +5,7 @@
 	--black: #27354a;
 	--white: #ffffff;
 	--brown: #be845f;
+	--brown-light: #d7ab90;
 }
 
 body {
@@ -114,6 +115,20 @@ body {
 	top: 45%;
 	border-radius: 50px;
 	z-index: 4;
+}
+
+.nose-inner {
+	position: absolute;
+	width: 12%;
+	height: 13%;
+    border-radius: 0 0 100% 100%;
+    border-bottom: 2px solid var(--brown-light);
+    top: 72%;
+    left: 31%;
+}
+
+.nose-inner--right {
+	transform: translateX(20px);
 }
 
 .mouth {

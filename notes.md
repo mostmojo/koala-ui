@@ -31,4 +31,5 @@ left = (100 - width) / 2
 top = (100 - height) / 2
 ```
 * We guess the width and height of the nose too, you may like koalas with larger noses! So, set as you like. Then, we have to give a higher `z-index` to the nose so it appears on top of the eyes. Use `border-radius: 50%` to get the rounded corners.
+* Add inner-nose element and create a slight shade of lighter brown to make the nostrils. We also use `border-bottom` to get the curves. Use the more modern approach mentioned before to get the element `inner-nose--right` to the right using `transform: translateX(20px);`.
 * For the `mouth` element, after setting width and height with `background color`, I realised it looked to block-y. So, used `border-bottom: 12px solid var(--grey-dark);` to create a straight line and add a `border-radius: 0 0 100% 100%;` skewing the corners to make a half moon shape 🌙.
