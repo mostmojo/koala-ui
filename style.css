@@ -20,7 +20,7 @@ body {
 	/* border: 2px solid red; --- to see what it looks like --- */
 }
 
-.head{
+.head {
 	position: absolute;
 	top: 16.5%;
 	left: 25%;
@@ -30,11 +30,33 @@ body {
 	border-radius: 50%;
   }
 
-  .head-copy {
+.head-copy {
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	position: absolute;
 	background: var(--grey);
 	border-radius: 50%;
 	z-index: 2;
+}
+
+.ear-left {
+	position: absolute;
+	width: 60%;
+	height: 65%;
+	left: -20%;
+	top: 5%;
+	background: var(--grey);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.ear-right {
+	position: absolute;
+	width: 60%;
+	height: 65%;
+	right: -20%;
+	top: 5%;
+	background: var(--grey);
+	border-radius: 50%;
+	z-index: 1;
   }
