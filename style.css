@@ -13,6 +13,7 @@ body {
 	background: var(--blue);
 }
 
+/* --- Invisible box container --- */
 .box {
 	position: relative;
 	margin: auto;
@@ -23,6 +24,7 @@ body {
 	background: none;
 }
 
+/* --- Face elements --- */
 .head {
 	position: absolute;
 	top: 16.5%;
@@ -168,7 +170,7 @@ body {
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-/* Keyframes for animation */
+/* --- Keyframes for animation --- */
 @keyframes drop {
 	0% {
 		opacity: 0;
@@ -186,6 +188,7 @@ body {
 	}
 }
 
+/* --- Media queries --- */
 @media screen and (max-width: 600px) {
 	.box{
 	  position: relative;
