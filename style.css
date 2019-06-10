@@ -1,9 +1,10 @@
 :root {
 	--blue: #81c2c5;
 	--grey: #c1d5e4;
-	--grey-dark: #819CAF;
-	--black: #27354A;
+	--grey-dark: #819caf;
+	--black: #27354a;
 	--white: #ffffff;
+	--brown: #be845f;
 }
 
 body {
@@ -62,7 +63,7 @@ body {
 	z-index: 1;
   }
 
-  .inner-ear {
+.inner-ear {
 	position: absolute;
 	border-radius: 50%;
 	width: 80%;
@@ -70,9 +71,9 @@ body {
 	top: 10%;
 	left: 10%;
 	background: var(--grey-dark);
-  }
+}
 
-  .eye-left {
+.eye-left {
 	position: absolute;
 	background: var(--white);
 	width: 30%;
@@ -81,9 +82,9 @@ body {
 	left: 21%;
 	border-radius: 50%;
 	z-index: 3;
-  }
+}
 
-  .eye-right {
+.eye-right {
 	position: absolute;
 	background: var(--white);
 	width: 30%;
@@ -92,9 +93,9 @@ body {
 	right: 21%;
 	border-radius: 50%;
 	z-index: 3;
-  }
+}
 
-  .pupil {
+.pupil {
 	position: absolute;
 	width: 28%;
 	height: 30%;
@@ -102,4 +103,27 @@ body {
 	left: 36%;
 	border-radius: 50%;
 	background: var(--black);
-  }
+}
+
+.nose {
+	position: absolute;
+	background: var(--brown);
+    width: 24%;
+    height: 28.5%;
+    left: 38%;
+	top: 45%;
+	border-radius: 50px;
+	z-index: 4;
+}
+
+.mouth {
+    position: absolute;
+    width: 26%;
+    height: 8%;
+    border-radius: 0% 0% 100% 100%;
+    /* background: var(--grey-dark); */
+    border-bottom: 12px solid var(--grey-dark);
+    top: 70%;
+    left: 38%;
+    z-index: 3;
+}
