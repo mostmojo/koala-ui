@@ -172,16 +172,27 @@ body {
   @keyframes drop {
 	0% {
 		opacity: 0;
-		transform: translateY(-13.5px);
+		transform: translateY(-13.5px) scale(1.25);
 	}
 
 	50% {
 		opacity: 0.5;
-		transform: translateY(-10px);
+		transform: translateY(-10px) scale(1.1);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateY(0px);
+		transform: translateY(0px) scale(1);
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.box{
+	  position: relative;
+	  margin: auto;
+	  display: block;
+	  margin-top: 2%;
+	  width: 400px;
+	  height: 280px;
+	  background: none;
+	}
