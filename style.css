@@ -20,9 +20,9 @@ p {
 	background: linear-gradient(to right, var(--white), var(--grey-dark));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	padding-left: 4rem;
 	animation: text 1.625s ease;
 	animation-delay: 1.5s;
-	padding-left: 4rem;
 	opacity: 0.0;
 }
 
