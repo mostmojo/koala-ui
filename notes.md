@@ -40,3 +40,4 @@ top = (100 - height) / 2
 ```
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 ```
+* By declaring `@keyframes` with the name I picked: `drop`, we set the state of the selected element we'll apply them to at `0, 50 & 100%`. In this case we want the selected elements to appear bigger and fall downwards, so we alter the scale and Y axis using the `transform` property. We later add `animation: drop 1.5s ease;` to the selected elements we want the `@keyframes` to apply to. Click reload (CMD + R) if you missed the effect.
