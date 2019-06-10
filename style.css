@@ -1,6 +1,7 @@
 :root {
 	--blue: #81c2c5;
 	--grey: #c1d5e4;
+	--grey-dark: #819CAF;
 	--black: #000000;
 	--white: #ffffff;
 }
@@ -59,4 +60,14 @@ body {
 	background: var(--grey);
 	border-radius: 50%;
 	z-index: 1;
+  }
+
+  .inner-ear {
+	position: absolute;
+	border-radius: 50%;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	background: var(--grey-dark);
   }
