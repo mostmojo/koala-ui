@@ -1,0 +1,20 @@
+:root {
+	--blue: #81c2c5;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+body {
+	background: var(--blue);
+}
+
+.box {
+	position: relative;
+	margin: auto;
+	display: block;
+	margin-top: 8%;
+	width: 600px;
+	height: 420px;
+	background: none;
+	/* border: 2px solid red; */
+}
