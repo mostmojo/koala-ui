@@ -21,8 +21,7 @@ p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding-left: 4rem;
-	animation: text 1.625s ease;
-	animation-delay: 1.5s;
+	animation: text 1.625s ease 1.5s;
 	opacity: 0.0;
 }
 
